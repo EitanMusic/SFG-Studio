@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FL Web Studio - Full</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>FL Web Studio - Full</h1>
+    <div id="transport">
+      <button id="play">▶ Play</button>
+      <button id="stop">■ Stop</button>
+      <button id="export">⬇ Export WAV</button>
+      <button id="save">💾 Save Project</button>
+      <button id="load">📂 Load Project</button>
+      <input type="file" id="file-input" style="display:none" />
+      <label for="bpm">BPM:</label>
+      <input type="number" id="bpm" value="120" min="30" max="300" />
+    </div>
+  </header>
+
+  <main>
+    <section id="step-sequencer-section">
+      <h2>Step Sequencer</h2>
+      <div id="sequencer-grid"></div>
+    </section>
+
+    <section id="piano-roll-section">
+      <h2>Piano Roll</h2>
+      <canvas id="piano-roll" width="800" height="200"></canvas>
+    </section>
+
+    <section id="mixer-section">
+      <h2>Mixer</h2>
+      <div id="mixer"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
